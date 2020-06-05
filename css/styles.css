@@ -1,0 +1,309 @@
+html,
+body {
+    height:100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width:768px) {
+    #header {
+        text-align:center;
+    }
+    #header img {
+        margin:20% auto 0;
+    }
+    #social {
+        text-align:center;
+    }
+    #social hr, #who hr {
+        margin:8% auto;
+    }
+    #who {
+        text-align:center;
+    }
+    #who img {
+        margin-top:15%;
+    }
+    #footer {
+        text-align:center;
+    }
+}
+
+.navbar {
+  background: linear-gradient(#000, #0000) !important;
+  font-family: 'Lato', sans-serif;  
+}
+
+.navbar .nav .nav-item .nav-link {
+  color: #d1d1d1;
+}
+
+.navbar .nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+/*HEADER*/
+
+#header {
+    background:url('../img/slide1.jpg') center center no-repeat;
+    background-size:cover;
+    height:100%;
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+#header .container {
+z-index: 3;
+}
+
+#header img {
+    padding:0 0 20px;
+    width:80%;
+}
+
+#header .header-right {
+    background-color:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+    z-index: 5;
+}
+
+#header .fa {
+    margin:5% 0;
+    z-index: 5;
+}
+
+#header a .fa {
+    color:#fff;
+    z-index: 5;
+}
+
+#header a .fa:hover {
+    color:#ccc;
+    z-index: 5;
+}
+
+#header .headerTitle {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #5D8286;
+}
+
+#header .sloganTitle {
+    font-size: 30px;
+    border-bottom: 1px #5D8286 solid;
+}
+
+#header .descrptionTitle {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/*SOCIAL*/
+
+#social {
+    padding:4.25rem 0;
+    background-color: black;
+}
+
+#social .fa {
+    font-size:1.5em;
+    color:#325D79;
+    border:2px solid #325D79;
+    width:60px;
+    height:60px;
+    border-radius:30%;
+    text-align:center;
+    padding:30% 0;
+    margin-top:10px;
+    transition:all 0.4s ease-in-out;
+}
+
+#social .fa:hover {
+    color:#fff;
+    background:#325D79;
+}
+
+#social .breakLine {
+    background-color: white;
+}
+
+/*about*/
+
+#about {
+    padding:5rem 0;
+    background-color:black;
+    color: white;
+}
+
+/*WORK*/
+
+#work {
+    padding:5rem 0;
+}
+
+#work .work-img {
+    position:relative;
+}
+
+#work .work-img .img-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    background-image: url('../img/eye.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    opacity:0;
+    z-index:0;
+    transition:all 0.3s ease-in-out;
+}
+
+#work .work-img .img-overlay:hover {
+    opacity:1;
+    z-index:1;
+}
+
+/*WHY*/
+
+#why {
+    padding:5rem 0;
+    background-color:black;
+    color: white;
+}
+
+#why .fa {
+    color:#325D79;
+    padding:15px 0;
+}
+
+/*CUSTOMERS*/
+
+#customers {
+    padding:5rem 0;
+    overflow:hidden;
+}
+
+#customers .carousel-indicators li {
+    background-color:#325D79;
+}
+
+#customers .carousel-inner {
+    margin-bottom:50px;
+}
+
+#customers .carousel-indicators {
+    margin-bottom:-50px;
+}
+
+
+/*Team*/
+#team {
+    background-color: black;
+    color: white;
+}
+
+.our-team-area {
+    padding-top: 10px;
+}
+
+.our-team-text {
+    padding-bottom: 60px;
+}
+
+.our-team-text h1 {
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+}
+
+.our-team-box {
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+.our-team-box .portofolioButton {
+    color: #325D79;
+}
+
+.our-team-box .portofolioButton:hover {
+    color: white;
+    border: white;
+}
+
+.our-team-box img {
+    border: 10px black solid;
+
+}
+
+.icons i{
+margin: 6px;
+font-size: 20px;
+border: 3px solid white;
+padding: 5px;
+border-radius: 3px;
+}
+
+.icons {
+    padding: 8px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+    margin-top: -10px;
+}
+
+.icons a{
+    color: white;
+}
+
+.icons a:hover {
+    color:#71A596;
+}
+
+.our-team-box h4 {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+/*CONTACT*/
+
+#contact {
+    padding:5rem 0;
+}
+
+/*FOOTER*/
+
+#footer {
+    padding:2rem 0;
+    background-color: black;
+    color:white;
+}
+
+#footer a {
+    color:white;
+}
+
+#footer .fa {
+    padding:0 5px;
+}
